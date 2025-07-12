@@ -1,0 +1,31 @@
+{
+    "name": "codesmith445/loadmore",
+    "description": "A Load More Laravel component for flexible AJAX Pagination",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Quiñones",
+            "email": "dark4ken@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codesmith445\\LoadMore\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codesmith445\\LoadMore\\LoadMoreServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --tag=public --force"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
